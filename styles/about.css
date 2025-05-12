@@ -1,0 +1,137 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff8f0;
+    color: #333;
+}
+
+.header {
+    padding: 20px 12%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+}
+
+.logo span {
+    color: orangered;
+}
+
+.navbar a {
+    color: white;
+    margin: 0 15px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.navbar a.active,
+.navbar a:hover {
+    color: orangered;
+}
+
+.contact {
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.contact:hover {
+    background-color: orangered;
+    color: white;
+}
+
+.about-section {
+    padding-top: 120px;
+}
+
+.about-section h1 {
+    font-size: 36px;
+    color: orangered;
+    margin-bottom: 5px;
+}
+
+.about-section h2 {
+    margin-top: 40px;
+    color: #444;
+}
+
+.about-section p, ul {
+    font-size: 20px;
+    line-height: 1.6;
+    font-family: 'Poppins';
+}
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 150px 50px 50px;
+    color: white;
+    background-color: #1a1a1a;
+  }
+  
+  .about h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .about h1 span {
+    color: orangered;
+  }
+  
+  .about-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 800px;
+  }
+  
+  .about .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .about .btn:hover {
+    background-color: white;
+    color: orangered;
+  }
+  
+  .about-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .card {
+    background: #2c2c2c;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.1);
+  }
+  
+  .card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+  }
+  

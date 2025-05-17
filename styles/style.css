@@ -198,6 +198,7 @@ span{
   cursor: pointer;
   user-select: none;
   color: orangered;
+  margin-left: auto;
   margin-right: 16px;
 }
 
@@ -210,6 +211,10 @@ span{
   padding: 0;
 }
 
+.nav-links li {
+  list-style: none;
+}
+
 .nav-links li a {
   text-decoration: none;
   color: #333;
@@ -218,8 +223,8 @@ span{
   transition: color 0.2s;
 }
 
-.nav-links li a:hover,
-.nav-links li a.active {
+.nav-links li a.active,
+.nav-links li a:hover {
   color: orangered;
 }
 
@@ -232,7 +237,7 @@ span{
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 60px; /* adjust based on your header height */
+    top: 60px; /* adjust if your header is taller */
     right: 20px;
     background: #fff;
     box-shadow: 0 4px 24px rgba(255,87,34,0.12);
@@ -242,5 +247,72 @@ span{
   }
   .nav-links.open {
     display: flex;
+  }
+  .navbar a:not(.logo):not(.contact) {
+    display: none;
+  }
+
+  body {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 8px;
+  }
+
+  .logo {
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+
+  .contact-section h1 {
+    font-size: 28px;
+    margin-top: 24px;
+    text-align: center;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    padding: 0 8px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  .contact-info {
+    margin-top: 24px;
+    text-align: center;
+  }
+
+  .projects-section h1,
+  .about-section h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .projets-grid,
+  .projects-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 0 8px;
+  }
+
+  .project-card {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
   }
 }

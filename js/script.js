@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function () {
       navLinks.classList.toggle('open');
     });
 
-    // Optional: close menu when a link is clicked (for better UX)
+    // Optional: close menu when a link is clicked
     navLinks.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
         navLinks.classList.remove('open');

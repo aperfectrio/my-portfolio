@@ -315,4 +315,21 @@ span{
     max-width: 100%;
     height: auto;
   }
+
+  .img-box {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .home {
+    flex-direction: column;
+    gap: 2em;
+    padding: 140px 4% 0;
+    align-items: center;
+    text-align: center;
+  }
 }
